@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { HashRouter as BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import MyApp from './components/MyApp/MyApp.jsx';
 import Portfolio from './components/Portfolio/Portfolio.jsx';
 

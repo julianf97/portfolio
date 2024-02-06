@@ -14,7 +14,7 @@ export default function NavbarPortfolio() {
             <img src={letrasLogo}></img>
         </div>
         <div className="contenedorBarras">
-            <FontAwesomeIcon className='iconBars' icon={ faBars }></FontAwesomeIcon>
+            <FontAwesomeIcon onClick={() => {console.log("click")}} className='iconBars' icon={ faBars }></FontAwesomeIcon>
         </div>
     </nav>
   )
