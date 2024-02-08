@@ -1,21 +1,33 @@
-import "../NavbarPortfolio/_navbarPortfolio.scss"
-import logoPortfolio from "../../../../public/cometas.png"
-import letrasLogo from "../../../../public/letrasLogo.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useContext } from "react";
+import { Divide as Hamburger } from "hamburger-react";
+import "./_navbarPortfolio.scss";
+import letrasLogo from "../../../../public/letrasLogo.png";
+import { OpenNavbarContext } from "../../../context/OpenNavbarContext";
 
 export default function NavbarPortfolio() {
+  const { handleClickOpen, handleExitNavbar, isOpen } = useContext(OpenNavbarContext);
+
   return (
     <nav className="containerPrincipalNavbarPortfolio">
-        <div className="logoContainer">
-            <img src={logoPortfolio}></img>
-        </div>
-        <div className="logoPalabrasContainer">
-            <img src={letrasLogo}></img>
-        </div>
-        <div className="contenedorBarras">
-            <FontAwesomeIcon onClick={() => {console.log("click")}} className='iconBars' icon={ faBars }></FontAwesomeIcon>
-        </div>
+      <div className="logoContainer">
+        <img src={letrasLogo} alt="Logo Portfolio" />
+      </div>
+      <div className="logoPalabrasContainer" />
+      <div className="contenedorBarras">
+        <Hamburger
+          onToggle={(toggled) => {
+            if (toggled) {
+              handleClickOpen();
+            } else {
+              handleExitNavbar();
+            }
+          }}
+          className="iconBars"
+          color="#fff"
+          rounded
+          toggled={isOpen} 
+        />
+      </div>
     </nav>
-  )
+  );
 }
