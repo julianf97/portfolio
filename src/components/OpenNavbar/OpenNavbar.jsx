@@ -4,14 +4,14 @@ import { OpenNavbarContext } from "../../context/OpenNavbarContext";
 import { useContext } from "react";
 
 export default function OpenNavbar() {
-  const { handleExitNavbar, isMenuOpen } = useContext(OpenNavbarContext);
+  const { isMenuOpen } = useContext(OpenNavbarContext);
 
   return (
     <motion.div
       className="contenedorGral"
       initial={{ x: "-100vw", opacity: 0 }}
       animate={{ x: isMenuOpen ? 0 : "-100vw", opacity: isMenuOpen ? 1 : 0 }}
-      transition={{ type: "tween", duration: 0.8, ease: "easeInOut" }}
+      transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
     >
       <div className="openNavbarContainer">
         <div className="cabeceraOpenNavbarContainer">
@@ -29,7 +29,6 @@ export default function OpenNavbar() {
           </ul>
         </nav>
       </div>
-      <div className="contenedorCloseAbsoluto" onClick={handleExitNavbar}></div>
     </motion.div>
   );
 }

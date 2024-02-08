@@ -22,7 +22,7 @@ export default function NavbarPortfolio() {
               handleExitNavbar();
             }
           }}
-          className="iconBars"
+          size={20}
           color="#fff"
           rounded
           toggled={isOpen} 
