@@ -4,6 +4,7 @@ import NavbarPortfolio from "../../components/NavbarPortfolio/NavbarPortfolio/Na
 import OpenNavbar from "../OpenNavbar/OpenNavbar"
 import DescriptionInitialPortfolio from "../DescripcionInitialPortfolio/DescriptionInitialPortfolio.jsx"
 import { OpenNavbarContext } from "../../context/OpenNavbarContext.jsx"
+import CardImg from "../CardImg/CardImg.jsx"
 import { useContext } from "react"
 
 export default function Portfolio() {
@@ -27,6 +28,7 @@ export default function Portfolio() {
         <NavbarPortfolio/>
         <DescriptionInitialPortfolio/>
       </main>
+      <CardImg/>
     </>
   )
 }

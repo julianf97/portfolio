@@ -32,7 +32,7 @@ export default function DescriptionInitialPortfolio() {
       </div>
       <motion.div
         className="titleTextPresentation"
-        initial={{ x: "-15vw", opacity: 0 }}
+        initial={{ x: "-30vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
         exit={{ opacity: 0 }}
@@ -41,13 +41,15 @@ export default function DescriptionInitialPortfolio() {
       </motion.div>
       <motion.div
         className="descriptionTextPresentation"
-        initial={{ x: "-15vw", opacity: 0 }}
+        initial={{ x: "-30vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "tween", duration: 1.2, ease: "easeInOut", delay: 0.5 }}
         exit={{ opacity: 0 }}
         onAnimationComplete={() => setShowCard(true)}
       >
-        <p>Programador con más de 3 años de experiencia, centrado en la creación de aplicaciones web rápidas, intuitivas y construidas con las mejores prácticas del mercado. Me especializo en proporcionar la mejor experiencia de usuario, combinando un diseño excepcional con una eficacia de desarrollo óptima.</p>
+      <p>
+        Desarrollador con tres años de experiencia especializado en la creación de aplicaciones web ágiles y amigables, con un enfoque centrado en el diseño de calidad, la optimización de la experiencia del usuario y el uso de las mejores prácticas de la industria.
+      </p>
       </motion.div>
     </div>
   );
