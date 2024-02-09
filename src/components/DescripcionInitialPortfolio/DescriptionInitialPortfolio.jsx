@@ -10,9 +10,9 @@ export default function DescriptionInitialPortfolio() {
       <div className="contenedorCardFullStack">
         <motion.div
           className="cardFullStack"
-          initial={{ y: "-5vh", opacity: 0 }}
-          animate={{ y: 0, opacity: showCard ? 1 : 0 }} // Condición para mostrar u ocultar la tarjeta
-          transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
+          initial={{ y: showCard ? 0 : "-5vh", opacity: 0 }}
+          animate={{ y: showCard ? 0 : "-5vh", opacity: showCard ? 1 : 0 }}
+          transition={{ type: "tween", duration: 0.5, ease: "easeInOut" }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,9 +34,8 @@ export default function DescriptionInitialPortfolio() {
         className="titleTextPresentation"
         initial={{ x: "-15vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
+        transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
         exit={{ opacity: 0 }}
-        onAnimationComplete={() => setShowCard(true)} // Cuando la animación del título se complete, muestra cardFullStack
       >
         <h1>Hola 👋! Soy <span className="theBest">Julián Finelli </span>Desarrollador Web</h1>
       </motion.div>
@@ -44,8 +43,9 @@ export default function DescriptionInitialPortfolio() {
         className="descriptionTextPresentation"
         initial={{ x: "-15vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "tween", duration: 1.6, ease: "easeInOut", delay: 0.5 }}
+        transition={{ type: "tween", duration: 1.2, ease: "easeInOut", delay: 0.5 }}
         exit={{ opacity: 0 }}
+        onAnimationComplete={() => setShowCard(true)}
       >
         <p>Programador con más de 3 años de experiencia, centrado en la creación de aplicaciones web rápidas, intuitivas y construidas con las mejores prácticas del mercado. Me especializo en proporcionar la mejor experiencia de usuario, combinando un diseño excepcional con una eficacia de desarrollo óptima.</p>
       </motion.div>
