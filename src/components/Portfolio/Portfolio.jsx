@@ -2,6 +2,7 @@ import "./_portfolio.scss"
 import video from "../../../public/portfolioBackgroundVideo.webm"
 import NavbarPortfolio from "../../components/NavbarPortfolio/NavbarPortfolio/NavbarPortfolio"
 import OpenNavbar from "../OpenNavbar/OpenNavbar"
+import DescriptionInitialPortfolio from "../DescripcionInitialPortfolio/DescriptionInitialPortfolio.jsx"
 import { OpenNavbarContext } from "../../context/OpenNavbarContext.jsx"
 import { useContext } from "react"
 
@@ -24,6 +25,7 @@ export default function Portfolio() {
         </div>
         { isMenuOpen ? <OpenNavbar/> : <span/> }
         <NavbarPortfolio/>
+        <DescriptionInitialPortfolio/>
       </main>
     </>
   )

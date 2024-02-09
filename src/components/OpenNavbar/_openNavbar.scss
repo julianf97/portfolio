@@ -1,9 +1,17 @@
-.contenedorGral{
-    display: flex;
+body.menu-open {
+    overflow: hidden; /* Deshabilita el scroll cuando el menú está abierto */
+}
+.contenedorGral {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    z-index: 40;
-    position: relative !important;
+    height: 100%;
+    background-color: rgba(2, 6, 23, 0.9); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
     .openNavbarContainer{
         width: 100%;
         height: 100%;

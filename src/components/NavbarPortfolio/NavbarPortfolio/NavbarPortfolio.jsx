@@ -8,7 +8,7 @@ export default function NavbarPortfolio() {
   const { handleClickOpen, handleExitNavbar, isOpen } = useContext(OpenNavbarContext);
 
   return (
-    <nav className="containerPrincipalNavbarPortfolio">
+    <nav className={`containerPrincipalNavbarPortfolio ${isOpen ? 'open' : ''}`}>
       <div className="logoContainer">
         <img src={letrasLogo} alt="Logo Portfolio" />
       </div>

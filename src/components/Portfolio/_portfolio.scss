@@ -1,12 +1,12 @@
 .principalContainer {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: #030014;
     position: relative;
 
     .videoContainer {
         position: absolute;
-        top: -42%;
+        top: -40%;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;

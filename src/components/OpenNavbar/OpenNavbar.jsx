@@ -1,10 +1,24 @@
 import { motion } from "framer-motion";
 import "./_openNavbar.scss";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext";
+import { useEffect } from "react";
 import { useContext } from "react";
 
 export default function OpenNavbar() {
   const { isMenuOpen } = useContext(OpenNavbarContext);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+
+    // Habilitar scroll cuando el componente se desmonta
+    return () => {
+      document.body.classList.remove('menu-open');
+    };
+  }, [isMenuOpen]);
 
   return (
     <motion.div
