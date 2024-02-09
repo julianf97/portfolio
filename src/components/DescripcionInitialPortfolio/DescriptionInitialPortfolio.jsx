@@ -1,15 +1,18 @@
 import { motion } from "framer-motion";
+import { useState } from "react"; // Importa useState
 import "./_descriptionInitialPortfolio.scss";
 
 export default function DescriptionInitialPortfolio() {
+  const [showCard, setShowCard] = useState(false); // Estado para controlar la visibilidad de cardFullStack
+
   return (
     <div className="contenedorGralDescriptionInitialPortfolio">
       <div className="contenedorCardFullStack">
         <motion.div
           className="cardFullStack"
           initial={{ y: "-5vh", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
+          animate={{ y: 0, opacity: showCard ? 1 : 0 }} // Condición para mostrar u ocultar la tarjeta
+          transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,16 +32,17 @@ export default function DescriptionInitialPortfolio() {
       </div>
       <motion.div
         className="titleTextPresentation"
-        initial={{ x: "-100vw", opacity: 0 }}
+        initial={{ x: "-15vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
         exit={{ opacity: 0 }}
+        onAnimationComplete={() => setShowCard(true)} // Cuando la animación del título se complete, muestra cardFullStack
       >
         <h1>Hola 👋! Soy <span className="theBest">Julián Finelli </span>Desarrollador Web</h1>
       </motion.div>
       <motion.div
         className="descriptionTextPresentation"
-        initial={{ x: "-100vw", opacity: 0 }}
+        initial={{ x: "-15vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "tween", duration: 1.6, ease: "easeInOut", delay: 0.5 }}
         exit={{ opacity: 0 }}
