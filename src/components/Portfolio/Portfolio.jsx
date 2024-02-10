@@ -6,6 +6,7 @@ import DescriptionInitialPortfolio from "../DescripcionInitialPortfolio/Descript
 import { OpenNavbarContext } from "../../context/OpenNavbarContext.jsx"
 import CardImg from "../CardImg/CardImg.jsx"
 import { useContext } from "react"
+import Proyects from "../Proyects/Proyects.jsx"
 
 export default function Portfolio() {
 
@@ -29,6 +30,7 @@ export default function Portfolio() {
         <DescriptionInitialPortfolio/>
       </main>
       <CardImg/>
+      <Proyects/>
     </>
   )
 }
