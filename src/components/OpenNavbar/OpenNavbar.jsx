@@ -29,10 +29,7 @@ export default function OpenNavbar() {
     >
       <div className="openNavbarContainer">
         <div className="cabeceraOpenNavbarContainer">
-          <div className="contenedorLogoLetras">
-            <h1>Logo aquí</h1>
-            {/* Puedes agregar cualquier contenido adicional aquí */}
-          </div>
+          <div className="contenedorLogoLetras"/>
         </div>
         <nav className="navegadorNavbarOpen">
           <ul className="contenedorBotones">

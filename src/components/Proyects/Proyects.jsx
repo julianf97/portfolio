@@ -45,7 +45,7 @@ export default function Proyects() {
           technologies={[<ReactTag key="react" />, <JavascriptTag key="javascript"/>, <SassTag key="sass" />, <FramerMotionTag key="framerMotion"/>]}
         />
         <ProyectCard
-          title="Desafío Técnico Municipalidad SN"
+          title="Registro - Inicio de sesión"
           image={screenMunicipalidad}
           repositoryLink="https://github.com/julianf97/desafio-tecnico-municipalidadSN"
           technologies={[<ReactTag key="react" />, <JavascriptTag key="javascript"/>, <SassTag key="sass" />, <ExpressTag key="express" />, <NodeTag key="node" />, <SQLTag key="MySql"/>, <SequelizeTag key="sequelize"/>]}
@@ -71,6 +71,11 @@ export default function Proyects() {
           repositoryLink="https://github.com/julianf97/megadeth"
           technologies={[<JavascriptTag key="javascript"/>,<SassTag key="sass" />, <HtmlTag key="htmlTag" />, <CssTag key="cssTag" />]}
         />
+      </div>
+      <div className='contenedorBtnVerTodos'>
+        <div className="btnResumen">
+          <span>Ver Más</span>
+        </div>
       </div>
     </div>
   )

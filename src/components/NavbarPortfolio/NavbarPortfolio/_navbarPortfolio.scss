@@ -8,7 +8,7 @@
     backdrop-filter: blur(8px); /* Aplicar desenfoque */
     -webkit-backdrop-filter: blur(8px); /* Para navegadores webkit (Safari) */
     z-index: 50;
-    box-shadow: 0px 2px 8px rgba(42, 14, 97, 0.5); /* Sombra */
+    box-shadow: 0px 2px 8px rgba(67, 22, 156, 0.5); /* Sombra */
     display: flex;
     &.open {
         position: fixed;

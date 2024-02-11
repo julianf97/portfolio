@@ -7,6 +7,7 @@
     flex-direction: column;
     padding-top: 20px;
     margin-top: 20px;
+    transition: 1s;
     /* Estilos para diferentes tamaños de pantalla */
     @media (min-width: 840px) {
         width: 800px; /* Ancho específico para pantallas de al menos 840px de ancho */
@@ -108,7 +109,7 @@
 
 /* Estilos específicos para cuando el contenedor es hover */
 .proyectCard:hover {
-    background-color: #0e082e; /* Cambiar color de fondo en hover */
+    background-color: #110a3d; /* Cambiar color de fondo en hover */
 }
 
 /* Estilos específicos para el texto "in development⏳" */
