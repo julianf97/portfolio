@@ -50,7 +50,7 @@ export default function DescriptionInitialPortfolio() {
         onAnimationComplete={() => setShowCard(true)}
       >
       <p>
-        Desarrollador con tres años de experiencia especializado en la creación de aplicaciones web ágiles y amigables, con un enfoque centrado en el diseño de calidad, la optimización de la experiencia del usuario y el uso de las mejores prácticas de la industria.
+        Desarrollador web especializado en la creación de aplicaciones web con un enfoque centrado en el diseño de calidad, la optimización de la experiencia del usuario y el uso de las mejores prácticas de la industria.
       </p>
       </motion.div>
     </div>
