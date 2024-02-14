@@ -1,9 +1,12 @@
 /* eslint react/prop-types: 0 */
-import "./_proyectCard.scss";
+import { Link } from 'react-router-dom';
+import "./_proyectCardMobile.scss";
+import "./_proyectCardIpad.scss";
+import "./_proyectCardDesktop.scss"
 
 export default function ProyectCard({ title, image, deployLink, serverLink, repositoryLink, technologies }) {
   return (
-    <div className="proyectCard">
+    <section className="proyectCard">
         <div className="imgProyect">
             <img src={image} alt={title}></img>
         </div>
@@ -12,24 +15,24 @@ export default function ProyectCard({ title, image, deployLink, serverLink, repo
         </div>
         <div className="links">
           {deployLink && (
-            <div className="btnResumen">
-              <a href={deployLink} target="_blank" rel="noopener noreferrer">Deploy</a>
-            </div>
+            <Link to={deployLink} target="_blank" rel="noopener noreferrer" className="btnResumen">
+              <div>Deploy</div>
+            </Link>
           )}
           {serverLink && (
-            <div className="btnResumen">
-              <a href={serverLink} target="_blank" rel="noopener noreferrer">Server</a>
-            </div>
+            <Link to={serverLink} target="_blank" rel="noopener noreferrer" className="btnResumen">
+              <div>Server</div>
+            </Link>
           )}
           {!serverLink && deployLink && repositoryLink && (
-            <div className="btnResumen">
-              <a href={repositoryLink} target="_blank" rel="noopener noreferrer">Repositorio</a>
-            </div>
+            <Link to={repositoryLink} target="_blank" rel="noopener noreferrer" className="btnResumen">
+              <div>Repositorio</div>
+            </Link>
           )}
           {!deployLink && !serverLink && repositoryLink && (
-            <div className="btnResumen">
-              <a href={repositoryLink} target="_blank" rel="noopener noreferrer">Repositorio</a>
-            </div>
+            <Link to={repositoryLink} target="_blank" rel="noopener noreferrer" className="btnResumen">
+              <div>Repositorio</div>
+            </Link>
           )}
         </div>
         <div className="contenedorTecnologias">
@@ -37,6 +40,6 @@ export default function ProyectCard({ title, image, deployLink, serverLink, repo
             <div key={index} className="techTag">{tech}</div>
           ))}
         </div>
-    </div>
+    </section>
   )
 }

@@ -1,13 +1,13 @@
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './_footer.scss';
+import './_footerMobile.scss';
 
 export default function Footer() {
   return (
     <footer className="contenedorFooter">
+      <div className='internoFooter'>
         <div className="comunityContainer">
           <div className="tituloContainer">
             <span>Community</span>
@@ -39,16 +39,19 @@ export default function Footer() {
             <span>About</span>
           </div>
           <div className="youtubeContainer">
-            <span >Learning About Me</span>
+            <span>Learning About Me</span>
           </div>
           <div className="githubContainer">
             <span className='email'>julianfinelli97@gmail.com</span>
           </div>
-          <div className="githubContainer">
+          <div className="derechosContainerMobile">
             <span className='derechos'>© Julian Dev 2024 Inc. All rights reserved.</span>
           </div>
         </div>
+      </div>
+      <div className="derechosContainer">
+        <span className='derechos'>© Julian Dev 2024 Inc. All rights reserved.</span>
+      </div>
     </footer>
   );
 }
-

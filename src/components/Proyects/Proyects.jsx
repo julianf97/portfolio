@@ -1,6 +1,8 @@
 // Proyects.js
 import ProyectCard from '../ProyectCard/ProyectCard';
-import "./_proyects.scss";
+import "./_proyectsMobile.scss";
+import "./_proyectsIpad.scss";
+import "./_proyectsDesktop.scss"
 import mercadoLibreScreen from "../../../public/screensProyect/mercadoLibreScreen.png";
 import screenTattoo from "../../../public/screensProyect/screenTattoo.jpg";
 import screenMunicipalidad from "../../../public/screensProyect/screenMunicipalidad.png"
@@ -29,7 +31,7 @@ export default function Proyects() {
       <div className="contenedorSegundoTitulo">
         <h3>Proyectos Destacados</h3>
       </div>
-      <div className="contenedorProyects">
+      <article className="contenedorProyects">
         <ProyectCard
           title="Desafio Técnico Mercado Libre"
           image={mercadoLibreScreen}
@@ -71,7 +73,7 @@ export default function Proyects() {
           repositoryLink="https://github.com/julianf97/megadeth"
           technologies={[<JavascriptTag key="javascript"/>,<SassTag key="sass" />, <HtmlTag key="htmlTag" />, <CssTag key="cssTag" />]}
         />
-      </div>
+      </article>
       <div className='contenedorBtnVerTodos'>
         <div className="btnResumen">
           <span>Ver Más</span>

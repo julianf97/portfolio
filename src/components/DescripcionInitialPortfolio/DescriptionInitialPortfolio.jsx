@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react"; // Importa useState
-import "./_descriptionInitialPortfolio.scss";
+import "./_descriptionInitialPortfolioMobile.scss";
+import "./_descriptionInitialPortfolioIpad.scss";
+import "./_descriptionInitialPortfolioDesktop.scss";
 
 export default function DescriptionInitialPortfolio() {
   const [showCard, setShowCard] = useState(false); // Estado para controlar la visibilidad de cardFullStack
@@ -43,7 +45,7 @@ export default function DescriptionInitialPortfolio() {
         className="descriptionTextPresentation"
         initial={{ x: "-30vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "tween", duration: 1.2, ease: "easeInOut", delay: 0.5 }}
+        transition={{ type: "tween", duration: 1.5, ease: "easeInOut", delay: 0.5 }}
         exit={{ opacity: 0 }}
         onAnimationComplete={() => setShowCard(true)}
       >

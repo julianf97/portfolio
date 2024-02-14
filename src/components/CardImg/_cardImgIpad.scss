@@ -1,0 +1,65 @@
+@media only screen and (min-width: 601px) and (max-width: 1025px) {
+    .contenedorCardImg {
+        width: 100%;
+        height: 50vh;
+        background-color: #030014;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 900 !important;
+        padding-top: 30px;
+        .cardImg {
+            width: 60%;
+            height: 50%;
+            margin-top: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-bottom: 1px rgba(59, 8, 126, 0.541) solid;
+            }
+        }
+
+        .contenedorBotones {
+            width: 80%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -20px;
+            margin-top: 20px;
+            .btnResumen {
+                width: 65px;
+                height: 35px;
+                animation: slideleftT4 0.4s ease-in-out;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                color: white;
+                cursor: pointer;
+                transition: transform 0.15s ease-in-out;
+                background: linear-gradient(180deg,rgba(60,8,126,0),rgba(60,8,126,.32)),rgba(113,47,255,.12);
+                box-shadow: inset 0 0 12px #bf97ff3d;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                font-weight: 600;
+                &:hover {
+                    background: linear-gradient(180deg,rgba(60,8,126,0),rgba(60,8,126,.32)),rgba(113,47,255,.12);
+                    box-shadow: inset 0 0 12px #bf97ff60;
+                }
+
+                &:active {
+                    transform: scale(0.9);
+                }
+
+                transition: all 0.15s ease-in-out;
+                user-select: none;
+                border-radius: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

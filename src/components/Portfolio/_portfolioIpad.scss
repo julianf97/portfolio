@@ -1,0 +1,79 @@
+@media only screen and (min-width: 601px) and (max-width: 802px) { 
+    .principalContainer {
+        height: auto;
+        width: 100%;
+        background-color: #030014;
+        position: relative;
+        .soloDesktop{
+            display: none !important;
+        }
+        .backgroundContainer{
+            width: 100%;
+            height: 940px;
+            position: absolute;
+            z-index: 8000000;
+            background-image: url('/public/main.svg');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat; /* Agregado para asegurar que el fondo no se repita */
+        }
+        .videoContainer {
+            position: absolute;
+            top: -41% !important;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+@media only screen and (min-width: 802px) and (max-width: 1025px) { 
+    .principalContainer {
+        height: auto !important;
+        width: 100%;
+        background-color: #030014;
+        position: relative;
+        .soloDesktop{
+            display: none !important;
+        }
+        .backgroundContainer{
+            width: 100%;
+            height: 940px;
+            position: absolute;
+            z-index: 8000000;
+            background-image: url('/public/main.svg');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat; /* Agregado para asegurar que el fondo no se repita */
+        }
+        .videoContainer {
+            position: absolute;
+            top: -39% !important;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    
+}

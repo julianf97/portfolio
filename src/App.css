@@ -5,6 +5,7 @@
 
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow-x: hidden;
 }
 
 a{
@@ -13,11 +14,11 @@ a{
 }
 
 body::-webkit-scrollbar {
-  width: 5px;          
+  width: 4px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #030014;
+  background: #040612;
 }
 
 body::-webkit-scrollbar-thumb {

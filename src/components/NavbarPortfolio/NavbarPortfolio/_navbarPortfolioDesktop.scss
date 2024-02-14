@@ -1,0 +1,89 @@
+@media (min-width: 900px) { 
+
+    .containerPrincipalNavbarPortfolio {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background-color: rgba(3, 0, 20, 0.2); /* Color de fondo con transparencia */
+        backdrop-filter: blur(8px); /* Aplicar desenfoque */
+        -webkit-backdrop-filter: blur(8px); /* Para navegadores webkit (Safari) */
+        z-index: 85550000;
+        box-shadow: 0px 2px 8px rgba(67, 22, 156, 0.5); /* Sombra */
+        display: flex;
+        &.open {
+            position: fixed;
+        }
+    
+        .logoContainer {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 5%;
+            img {
+                width: 60%;
+                height: 60%;
+                object-fit: cover;
+            }
+        }
+    
+    
+        .logoPalabrasContainer {
+            width: 60% !important;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+            .selectorIdiomaMobile{
+                display: none !important;
+            }
+            .contenedorNavDesktop{
+                width: 520px !important;
+                height: 70%;
+                border-radius: 9999px !important; 
+                border: solid 1px #7042f861;
+                background-color: #0300145e;     
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+        .contenedorBarras {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 2%;
+            .selectorIdioma{
+                color: #ffffffdc;
+                cursor: pointer;
+                font-size: 1.2rem;
+                line-height: 1.25rem;
+                font-weight: 600;
+            }
+            .selectorIdioma:hover{
+                color: #fff;
+            }
+            .iconBars {
+                color: #fff !important;
+                font-size: 1.5rem;
+                position: absolute;
+                cursor: pointer;
+                border: solid 1px;
+            }
+        }
+    }
+}

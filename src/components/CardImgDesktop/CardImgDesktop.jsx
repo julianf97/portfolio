@@ -1,21 +1,17 @@
-import "./_cardImgMobile.scss"
-import "./_cardImgIpad.scss"
-import "./_cardImgDesktop.scss"
 import { useState } from "react";
 import { motion } from "framer-motion";
-import foto from "../../../public/fotoSinFondo.png"
+import foto from "../../../public/fotoSinFondo.png";
+import "./_cardImgDesktop.scss";
 
-export default function CardImg() {
-
+export default function CardImgDesktop() {
   const [imgAnimationComplete, setImgAnimationComplete] = useState(false);
 
   const handleImgAnimationComplete = () => {
     setImgAnimationComplete(true);
   };
 
-
   return (
-    <div className="contenedorCardImg">
+    <div className="contenedorCardImgDesktop">
       <motion.div
         className="cardImg"
         initial={{ x: "30vw", opacity: 0 }}
@@ -47,3 +43,5 @@ export default function CardImg() {
     </div>
   );
 }
+
+
