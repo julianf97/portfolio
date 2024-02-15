@@ -24,6 +24,7 @@ import HtmlTag from "../components/Tags/HtmlTag/HtmlTag"
 import CssTag from "../components/Tags/CssTag/CssTag"
 import OpenNavbar from '../components/OpenNavbar/OpenNavbar';
 import { OpenNavbarContext } from '../context/OpenNavbarContext';
+import Footer from '../components/Footer/Footer';
 
 
 
@@ -37,6 +38,7 @@ export default function Proyects() {
 
   
   return (
+    <>
     <div className='contenedorPageProyects'>
     {isMenuOpen ? <OpenNavbar /> : <span />}
     <NavbarPortfolio/>
@@ -93,6 +95,9 @@ export default function Proyects() {
       </article>
     </div>
     </div>
+    <Footer/>
+    </>
+
     
   )
 }

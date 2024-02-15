@@ -1,6 +1,7 @@
 @media (max-width: 600px) { 
     .contenedorPageProyects{
         .contenedorGralProyects{
+            padding-bottom: 200px;
             .contenedorBuscador{
                 width: 100%;
                 height: auto;
@@ -16,7 +17,7 @@
                     align-items: center;
                     input{
                         background-color: transparent; // Establecer el color de fondo a transparente
-                        border: solid 1px #25155C;
+                        border: solid 1px #25155C;                        border: solid 1px #26155c00;
                         outline: none; //
                         width: 92%;
                         height: 40px;
