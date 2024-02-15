@@ -1,4 +1,3 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './_footer.scss';
@@ -25,11 +24,11 @@ export default function Footer() {
           <div className="tituloContainer">
             <span>Social Media</span>
           </div>
-          <div className="youtubeContainer">
-            <FontAwesomeIcon className='iconYoutube' icon={faLinkedin} />
+          <div className="linkedinContainer">
+            <FontAwesomeIcon className='iconLinkedin' icon={faLinkedin} />
             <span>Linkedin</span>
           </div>
-          <div className="githubContainer">
+          <div className="instagramContainer">
             <FontAwesomeIcon className='iconYoutube' icon={faInstagram} />
             <span>Instagram</span>
           </div>
@@ -38,7 +37,7 @@ export default function Footer() {
           <div className="tituloContainer">
             <span>About</span>
           </div>
-          <div className="youtubeContainer">
+          <div className="learningContainer">
             <span>Learning About Me</span>
           </div>
           <div className="githubContainer">

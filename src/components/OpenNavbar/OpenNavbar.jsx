@@ -3,6 +3,7 @@ import "./_openNavbar.scss";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext";
 import { useEffect } from "react";
 import { useContext } from "react";
+import { Link } from "react-router-dom"
 
 export default function OpenNavbar() {
   const { isMenuOpen } = useContext(OpenNavbarContext);
@@ -33,10 +34,16 @@ export default function OpenNavbar() {
         </div>
         <nav className="navegadorNavbarOpen">
           <ul className="contenedorBotones">
-            <li className="btnNav">Home</li>
-            <li className="btnNav">Proyect</li>
+            <Link to="/portfolio">
+              <li className="btnNav">Home</li>
+            </Link>
+            <Link to="/proyects">
+              <li className="btnNav">Proyects</li>
+            </Link>
             <li className="btnNav">About Me</li>
-            <li className="btnNav">Blog</li>
+            <Link to="/">
+              <li className="btnNav">Blog</li>
+            </Link>
           </ul>
         </nav>
       </div>

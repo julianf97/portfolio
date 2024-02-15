@@ -1,0 +1,24 @@
+@media (min-width: 1025px) {  
+    .contenedorPageProyects{
+        .contenedorGralProyects{
+            .contenedorBuscador{
+                width: 100%;
+                height: 25vh;
+                border: solid 1px red;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end !important;
+                .buscador{
+                    width: 50%;
+                    height: 50px;
+                    border: solid 1px red;
+                }
+            }
+            .contenedorFiltro{
+                width: 100%;
+                height: 5vh;
+                border: solid 1px red;
+            }
+        }
+    }
+}

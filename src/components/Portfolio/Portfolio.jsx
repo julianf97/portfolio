@@ -1,5 +1,5 @@
 // Portfolio.jsx
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { OpenNavbarContext } from "../../context/OpenNavbarContext.jsx";
 import NavbarPortfolio from "../../components/NavbarPortfolio/NavbarPortfolio/NavbarPortfolio";
 import OpenNavbar from "../OpenNavbar/OpenNavbar";
@@ -14,7 +14,11 @@ import "./_portfolioIpad.scss"
 import "./_portfolioDesktop.scss"
 
 export default function Portfolio() {
-  const { isMenuOpen } = useContext(OpenNavbarContext);
+  const { isMenuOpen, handleExitNavbar  } = useContext(OpenNavbarContext);
+
+  useEffect(() => {
+    handleExitNavbar()
+  },[])
 
   return (
     <> 

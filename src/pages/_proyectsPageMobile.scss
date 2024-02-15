@@ -1,0 +1,34 @@
+@media (max-width: 600px) { 
+    .contenedorPageProyects{
+        .contenedorGralProyects{
+            .contenedorBuscador{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end !important;
+                padding-top: 100px;
+                .buscador{
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    input{
+                        background-color: transparent; // Establecer el color de fondo a transparente
+                        border: solid 1px #25155C;
+                        outline: none; //
+                        width: 92%;
+                        height: 40px;
+                        border-radius: 7px;
+                    } 
+                }
+            }
+            .contenedorFiltro{
+                width: 100%;
+                height: 5vh;
+                padding-top: 10px;
+            }
+        }
+    }
+}

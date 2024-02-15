@@ -39,12 +39,14 @@
                     font-weight: 500;
                     font-size: 16px;
                     margin-top: -2px;
+                    transition: all 1s;
                 }
                 .iconYoutube{
                     color: #ffffffd7;
                     margin-right: 5px;
                     font-size: 1.1rem;
                     margin-left: -px;
+                    transition: all 1s;
                 }
             }
             .githubContainer{
@@ -73,6 +75,50 @@
                 .derechos{
                     margin-top: -60px;
                     display: none !important;
+                }
+            }
+            .linkedinContainer{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 10px;
+                span{
+                    color: #ffffffd7;
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-top: -2px;
+                    transition: all 1s;
+                }
+                .iconLinkedin{
+                    color: #ffffffd7;
+                    margin-right: 5px;
+                    font-size: 1.1rem;
+                    margin-left: -px;
+                    transition: all 1s;
+                }
+            }
+            .instagramContainer{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 10px;
+                span{
+                    color: #ffffffd7;
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-top: -2px;
+                    transition: all 1s;
+                }
+                .iconYoutube{
+                    color: #ffffffd7;
+                    margin-right: 5px;
+                    font-size: 1.1rem;
+                    margin-left: -px;
+                    transition: all 1s;
                 }
             }
             .derechosContainerMobile{

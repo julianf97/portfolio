@@ -24,6 +24,7 @@
                     color: #ffffffd7;
                     font-weight: 700;
                     font-size: 16px;
+                    user-select: none;
                 }
             }
             .youtubeContainer{
@@ -38,13 +39,94 @@
                     font-weight: 500;
                     font-size: 16px;
                     margin-top: -2px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    user-select: none;
                 }
                 .iconYoutube{
                     color: #ffffffd7;
                     margin-right: 5px;
                     font-size: 1.1rem;
                     margin-left: -px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    user-select: none;
                 }
+            }
+            .youtubeContainer:hover{
+                span{
+                    color: #FF0000;
+                }
+
+                .iconYoutube{
+                    color: #FF0000;
+                }
+            }
+            .linkedinContainer{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 10px;
+                span{
+                    color: #ffffffd7;
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-top: -2px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    user-select: none;
+                }
+                .iconLinkedin{
+                    color: #ffffffd7;
+                    margin-right: 5px;
+                    font-size: 1.1rem;
+                    margin-left: -px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    user-select: none;
+                }
+            }
+            .linkedinContainer:hover{
+                span{
+                    color: #0A66C2;
+                }
+
+                .iconLinkedin{
+                    color: #0A66C2
+                }
+            }
+            .learningContainer{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 10px;
+                span{
+                    color: #ffffffd7;
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-top: -2px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    user-select: none;
+                }
+                .iconYoutube{
+                    color: #ffffffd7;
+                    margin-right: 5px;
+                    font-size: 1.1rem;
+                    margin-left: -px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    user-select: none;
+                }
+            }
+            .learningContainer:hover{
+                span{
+                    color: #00c4ff
+                } 
             }
             .githubContainer{
                 width: 100%;
@@ -60,15 +142,68 @@
                     font-size: 16px;
                     margin-top: -2px;
                     margin-left: 2px;
+                    transition: all 1s;
+                    cursor: pointer;
+                    user-select: none;
                 }
                 .iconYoutube{
                     color: #ffffffd7;
                     margin-right: 5px;
                     font-size: 1.1rem;
                     margin-left: -px;
+                    transition: all 1s;
+                    cursor: pointer;
+                    user-select: none;
                 }
                 .derechos{
                     display: none !important;
+                }
+            }
+            .githubContainer:hover{
+                span{ 
+                    color: #DD4B25;
+                }
+                .iconYoutube{
+                    color: #DD4B25;
+                }
+            }
+            .instagramContainer{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 10px;
+
+                span{
+                    color: #ffffffd7;
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-top: -2px;
+                    margin-left: 2px;
+                    transition: all 1s;
+                    cursor: pointer;
+                    user-select: none;
+                }
+                .iconYoutube{
+                    color: #ffffffd7;
+                    margin-right: 5px;
+                    font-size: 1.1rem;
+                    margin-left: -px;
+                    transition: all 1s;
+                    cursor: pointer;
+                    user-select: none;
+                }
+                .derechos{
+                    display: none !important;
+                }
+            }
+            .instagramContainer:hover{
+                span{
+                    color: #ED2F9F
+                };
+                .iconYoutube{
+                    color: #ED2F9F;
                 }
             }
             .derechosContainerMobile{
