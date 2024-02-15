@@ -18,8 +18,8 @@ export default function CardImg() {
     <div className="contenedorCardImg">
       <motion.div
         className="cardImg"
-        initial={{ x: "30vw", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{opacity: 1 }}
         transition={{ type: "tween", duration: 1.5, ease: "easeInOut" }}
         exit={{ opacity: 0 }}
         onAnimationComplete={handleImgAnimationComplete}
