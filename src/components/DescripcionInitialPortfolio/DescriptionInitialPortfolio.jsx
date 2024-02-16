@@ -50,7 +50,9 @@ export default function DescriptionInitialPortfolio() {
         onAnimationComplete={() => setShowCard(true)}
       >
       <p>
-        Desarrollador web especializado en la creación de aplicaciones web con un enfoque centrado en el diseño de calidad, la optimización de la experiencia del usuario.
+      Mi filosofía de trabajo es simple pero poderosa: buscar la excelencia y calidad en cada tarea.
+      <br />
+      ¡Bienvenido a explorar mi viaje en un mundo de energía creativa en constante evolución!
       </p>
       </motion.div>
     </div>
