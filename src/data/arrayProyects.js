@@ -7,7 +7,7 @@ import megadethScreen from "../../public/screensProyect/screenMegadeth.jpg"
 
 export const arrayProjects = [
     {
-      title: "Desafio Técnico Mercado Libre",
+      title: "Mercado Libre Technical Challenge",
       image: mercadoLibreScreen,
       deployLink: "https://julian-merc-libre.vercel.app/",
       serverLink: "https://server-julianstore.onrender.com/",
@@ -21,7 +21,7 @@ export const arrayProjects = [
       technologies: ["ReactTag", "JavascriptTag", "SassTag", "FramerMotionTag"]
     },
     {
-      title: "Registro - Inicio de sesión",
+      title: "Register - Login",
       image: screenMunicipalidad,
       repositoryLink: "https://github.com/julianf97/desafio-tecnico-municipalidadSN",
       technologies: ["ReactTag", "JavascriptTag", "SassTag", "ExpressTag", "NodeTag", "MySQLTag", "SequelizeTag"]

@@ -26,12 +26,12 @@ export default function ProyectCard({ title, image, deployLink, serverLink, repo
           )}
           {!serverLink && deployLink && repositoryLink && (
             <Link to={repositoryLink} target="_blank" rel="noopener noreferrer" className="btnResumen">
-              <div>Repositorio</div>
+              <div>Code</div>
             </Link>
           )}
           {!deployLink && !serverLink && repositoryLink && (
             <Link to={repositoryLink} target="_blank" rel="noopener noreferrer" className="btnResumen">
-              <div>Repositorio</div>
+              <div>Code</div>
             </Link>
           )}
         </div>

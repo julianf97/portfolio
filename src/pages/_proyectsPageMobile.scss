@@ -50,9 +50,16 @@
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-
-                span{
+                
+                button{
                     color: #fff;
+                    transition: 0.5s;
+                    background: none;
+                    border: 0;
+                    font-size: 1rem;
+                }
+                button:hover{
+                    color: #00c4ff;
                 }
             }
         }

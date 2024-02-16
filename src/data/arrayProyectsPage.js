@@ -11,7 +11,7 @@ import coloCossyScreen from "../../public/screensProyect/screenColoCossy.png";
 export const arrayProjectsPage = [
   {
     id: "mercadoLibre",
-    title: "Desafio Técnico Mercado Libre",
+    title: "Mercado Libre Technical Challenge",
     image: mercadoLibreScreen,
     deployLink: "https://julian-merc-libre.vercel.app/",
     serverLink: "https://server-julianstore.onrender.com/",
@@ -29,7 +29,7 @@ export const arrayProjectsPage = [
   },
   {
     id: "snmunicipalidad",
-    title: "Registro - Inicio de sesión",
+    title: "Register - Login",
     image: screenMunicipalidad,
     repositoryLink: "https://github.com/julianf97/desafio-tecnico-municipalidadSN",
     technologies: ["ReactTag", "JavascriptTag", "SassTag", "ExpressTag", "NodeTag", "MySQLTag", "SequelizeTag"],
@@ -82,7 +82,7 @@ export const arrayProjectsPage = [
   },
   {
     id: "colocossy",
-    title: "Colo Cossy Fotografía",
+    title: "Colo Cossy Photography",
     image: coloCossyScreen,
     deployLink: "https://colocossyfotografia.netlify.app/",
     repositoryLink: "",
