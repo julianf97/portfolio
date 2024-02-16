@@ -1,14 +1,7 @@
-// Proyects.js
 import ProyectCard from '../ProyectCard/ProyectCard';
 import "./_proyectsMobile.scss";
 import "./_proyectsIpad.scss";
-import "./_proyectsDesktop.scss"
-import mercadoLibreScreen from "../../../public/screensProyect/mercadoLibreScreen.png";
-import screenTattoo from "../../../public/screensProyect/screenTattoo.jpg";
-import screenMunicipalidad from "../../../public/screensProyect/screenMunicipalidad.png"
-import screenPassword from "../../../public/screensProyect/screenPassword.jpg"
-import screenRick from "../../../public/screensProyect/screenRick.jpg"
-import megadethScreen from "../../../public/screensProyect/screenMegadeth.jpg"
+import "./_proyectsDesktop.scss";
 import ReactTag from "../Tags/ReactTag/ReactTag";
 import ExpressTag from "../Tags/ExpressTag/ExpressTag";
 import NodeTag from "../Tags/NodeTag/NodeTag";
@@ -17,10 +10,24 @@ import FramerMotionTag from '../Tags/FramerMotionTag/FramerMotionTag';
 import SQLTag from '../Tags/SQLTag/SQLTag';
 import SequelizeTag from '../Tags/SequelizeTag/SequelizeTag';
 import StyledComponentsTag from '../Tags/StyledComponentsTag/StyledComponentsTag';
-import JavascriptTag from "../Tags/JavascriptTag/JavascriptTag"
-import HtmlTag from "../Tags/HtmlTag/HtmlTag"
-import CssTag from "../Tags/CssTag/CssTag"
+import JavascriptTag from "../Tags/JavascriptTag/JavascriptTag";
+import HtmlTag from "../Tags/HtmlTag/HtmlTag";
+import CssTag from "../Tags/CssTag/CssTag";
+import { arrayProjects } from '../../data/arrayProyects';
 
+const tagComponents = {
+  ReactTag,
+  ExpressTag,
+  NodeTag,
+  SassTag,
+  FramerMotionTag,
+  SQLTag,
+  SequelizeTag,
+  StyledComponentsTag,
+  JavascriptTag,
+  HtmlTag,
+  CssTag
+};
 
 export default function Proyects() {
   return (
@@ -32,47 +39,20 @@ export default function Proyects() {
         <h3>Proyectos Destacados</h3>
       </div>
       <article className="contenedorProyects">
-        <ProyectCard
-          title="Desafio Técnico Mercado Libre"
-          image={mercadoLibreScreen}
-          deployLink="https://julian-merc-libre.vercel.app/"
-          serverLink="https://server-julianstore.onrender.com/"
-          technologies={[<ReactTag key="react" />, <JavascriptTag key="javascript"/>, <ExpressTag key="express" />, <NodeTag key="node" />, <StyledComponentsTag key="styledComponents"/>]}
-        />
-        <ProyectCard
-          title="Sr.Finelli Tattoos"
-          image={screenTattoo}
-          deployLink="https://tattoo-finelli.vercel.app/"
-          repositoryLink="https://github.com/julianf97/tattooFinelli"
-          technologies={[<ReactTag key="react" />, <JavascriptTag key="javascript"/>, <SassTag key="sass" />, <FramerMotionTag key="framerMotion"/>]}
-        />
-        <ProyectCard
-          title="Registro - Inicio de sesión"
-          image={screenMunicipalidad}
-          repositoryLink="https://github.com/julianf97/desafio-tecnico-municipalidadSN"
-          technologies={[<ReactTag key="react" />, <JavascriptTag key="javascript"/>, <SassTag key="sass" />, <ExpressTag key="express" />, <NodeTag key="node" />, <SQLTag key="MySql"/>, <SequelizeTag key="sequelize"/>]}
-        />
-        <ProyectCard
-          title="Password Generator"
-          image={screenPassword}
-          deployLink="https://password-generator-julianf97.vercel.app/"
-          repositoryLink="https://github.com/julianf97/password-generator"
-          technologies={[<ReactTag key="react" />, <JavascriptTag key="javascript"/>,<SassTag key="sass" />]}
-        />
-        <ProyectCard
-          title="Rick & Morty Wiki"
-          image={screenRick}
-          deployLink="https://therickandmortyapp.vercel.app/"
-          repositoryLink="https://github.com/julianf97/vitenMorty"
-          technologies={[<ReactTag key="react" />, <JavascriptTag key="javascript"/>,<SassTag key="sass" />]}
-        />
-        <ProyectCard
-          title="Megadeth Fan Website"
-          image={megadethScreen}
-          deployLink="https://megadeth.netlify.app/"
-          repositoryLink="https://github.com/julianf97/megadeth"
-          technologies={[<JavascriptTag key="javascript"/>,<SassTag key="sass" />, <HtmlTag key="htmlTag" />, <CssTag key="cssTag" />]}
-        />
+        {arrayProjects.map((project, index) => (
+          <ProyectCard
+            key={index}
+            title={project.title}
+            image={project.image}
+            deployLink={project.deployLink}
+            serverLink={project.serverLink}
+            repositoryLink={project.repositoryLink}
+            technologies={project.technologies.map((tag, index) => {
+              const TagComponent = tagComponents[tag];
+              return TagComponent ? <TagComponent key={index} /> : null;
+            })}
+          />
+        ))}
       </article>
       <div className='contenedorBtnVerTodos'>
         <div className="btnResumen">
@@ -80,5 +60,5 @@ export default function Proyects() {
         </div>
       </div>
     </div>
-  )
+  );
 }
