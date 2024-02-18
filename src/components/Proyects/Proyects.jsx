@@ -14,6 +14,7 @@ import JavascriptTag from "../Tags/JavascriptTag/JavascriptTag";
 import HtmlTag from "../Tags/HtmlTag/HtmlTag";
 import CssTag from "../Tags/CssTag/CssTag";
 import { arrayProjects } from '../../data/arrayProyects';
+import { Link } from 'react-router-dom';
 
 const tagComponents = {
   ReactTag,
@@ -55,9 +56,11 @@ export default function Proyects() {
         ))}
       </article>
       <div className='contenedorBtnVerTodos'>
-        <div className="btnResumen">
-          <span>Ver Más</span>
-        </div>
+        <Link to={"/proyects"}> 
+            <div className='btnResumen'>
+              <span>Ver Más</span>
+            </div>
+        </Link>
       </div>
     </div>
   );

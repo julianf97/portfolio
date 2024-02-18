@@ -7,6 +7,7 @@ import "./_navbarPortfolioDesktop.scss";
 import letrasLogo from "../../../../public/letrasLogo.png";
 import { OpenNavbarContext } from "../../../context/OpenNavbarContext";
 import NavbarDesktop from "../../NavbarDesktop/NavbarDesktop";
+import { Link } from "react-router-dom";
 
 export default function NavbarPortfolio() {
   const { handleClickOpen, handleExitNavbar, isOpen } = useContext(OpenNavbarContext);
@@ -58,7 +59,9 @@ export default function NavbarPortfolio() {
       animate={controls}
     >
       <div className="logoContainer">
-        <img src={letrasLogo} alt="Logo Portfolio" />
+        <Link to={"/"}>
+          <img src={letrasLogo} alt="Logo Portfolio" />
+        </Link>
       </div>
       <div className="logoPalabrasContainer">
         <div className="contenedorNavDesktop">

@@ -4,6 +4,17 @@ import './_footer.scss';
 import './_footerMobile.scss';
 
 export default function Footer() {
+
+  const handleEmailMe = () => {
+    const destinatario = 'juanmfinelli@hotmail.com';
+    const asunto = 'I want to book an appointment';
+
+    const mailtoLink = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}`;
+
+    window.location.href = mailtoLink;
+}
+
+
   return (
     <footer className="contenedorFooter">
       <div className='internoFooter'>
@@ -13,11 +24,15 @@ export default function Footer() {
           </div>
           <div className="youtubeContainer">
             <FontAwesomeIcon className='iconYoutube' icon={faYoutube} />
-            <span>Youtube</span>
+            <a href="https://www.youtube.com/channel/UCaaQx6Cr9iYLFE8WB4-n4Wg">
+              <span>Youtube</span>
+            </a>
           </div>
           <div className="githubContainer">
             <FontAwesomeIcon className='iconYoutube' icon={faGithub} />
-            <span>Github</span>
+            <a href="https://github.com/julianf97">
+              <span>Github</span>
+            </a>
           </div>
         </div>
         <div className="comunityContainer">
@@ -26,11 +41,15 @@ export default function Footer() {
           </div>
           <div className="linkedinContainer">
             <FontAwesomeIcon className='iconLinkedin' icon={faLinkedin} />
-            <span>Linkedin</span>
+            <a href="https://www.linkedin.com/in/julian-finelli/">
+              <span>Linkedin</span>
+            </a>
           </div>
           <div className="instagramContainer">
             <FontAwesomeIcon className='iconYoutube' icon={faInstagram} />
-            <span>Instagram</span>
+            <a href="https://www.instagram.com/">
+              <span>Instagram</span>
+            </a>
           </div>
         </div>
         <div className="comunityContainer">
@@ -41,7 +60,7 @@ export default function Footer() {
             <span>Learning About Me</span>
           </div>
           <div className="githubContainer">
-            <span className='email'>julianfinelli97@gmail.com</span>
+            <span className='email' onClick={handleEmailMe} >julianfinelli97@gmail.com</span>
           </div>
           <div className="derechosContainerMobile">
             <span className='derechos'>© Julian Dev 2024 Inc. All rights reserved.</span>
