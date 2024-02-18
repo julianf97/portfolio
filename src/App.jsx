@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { HashRouter as BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Portfolio from './components/Portfolio/Portfolio.jsx';
 import { OpenNavbarProvider } from './context/OpenNavbarContext.jsx';
 import { LenguajeProvider } from './context/LenguajeContext.jsx';

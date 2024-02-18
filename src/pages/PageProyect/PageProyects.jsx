@@ -30,6 +30,15 @@ export default function PageProyect() {
   const [filter, setFilter] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  scrollToTop()
+
   useEffect(() => {
     handleExitNavbar()
   },[]);
