@@ -12,7 +12,7 @@ export default function Footer() {
     const mailtoLink = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}`;
 
     window.location.href = mailtoLink;
-}
+  }
 
 
   return (
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
           <div className="instagramContainer">
             <FontAwesomeIcon className='iconYoutube' icon={faInstagram} />
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/juliannfinelli/">
               <span>Instagram</span>
             </a>
           </div>
