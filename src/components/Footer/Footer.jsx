@@ -6,8 +6,8 @@ import './_footerMobile.scss';
 export default function Footer() {
 
   const handleEmailMe = () => {
-    const destinatario = 'juanmfinelli@hotmail.com';
-    const asunto = 'I want to book an appointment';
+    const destinatario = 'julianfinelli97@hotmail.com';
+    const asunto = 'Hola Julián!, me contacto contigo desde el footer de tu portfolio!';
 
     const mailtoLink = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}`;
 
