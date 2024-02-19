@@ -9,6 +9,7 @@ import OpenNavbar from "../../../components/OpenNavbar/OpenNavbar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Footer from "../../../components/Footer/Footer";
 
 
 
@@ -54,7 +55,36 @@ export default function ProyectDetail() {
                 allowFullScreen
               ></iframe>
             </div>
+            <div className="tituloDescripcion">
+              <h4>Descripción</h4>
+            </div>
+            <div className="descripcion">
+              <div className="interiorDescripcion">
+                <p>Project made for a large community of fans of belgrano de cordoba, the main objective of the application is to raise funds for each game played by the team, here will reflect the contributions of all users and also you can see the costs of each game.</p>
+              </div>
+            </div>
+            <div className="tecnologias">
+              <div className="tituloTecnologias">
+                <h4>Tecnologías y Caracteristicas</h4>
+              </div>
+              <div className="listaTecnologias">
+                <ul>
+                  <li>React</li>
+                  <li>React</li>
+                  <li>React</li>
+                  <li>React</li>
+                  <li>React</li>
+                  <li>React</li>
+                  <li>React</li>
+                </ul>
+              </div>
+              <div className="contenedorBotones">
+                <div className="btnProyect">Deploy</div>
+                <div className="btnProyect"> Server </div>
+              </div>
+            </div>
           </div>
+          <Footer/>
         </>
     );
 
