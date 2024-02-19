@@ -58,7 +58,9 @@ export default function ProyectDetail() {
               ></iframe>
             </div>
             <div className="tituloDescripcion">
-              <h4>Descripción</h4>
+              <div className="interiorTituloDescripcion">
+                <h4>Descripción</h4>
+              </div>
             </div>
             <div className="descripcion">
               <div className="interiorDescripcion">

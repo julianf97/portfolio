@@ -60,12 +60,18 @@
             display: flex;
             align-items: center;
             padding-top: 40px;
-            padding-left: 290px;
+            justify-content: center ;
+            .interiorTituloDescripcion{
+                width: 60% !important;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
             h4{
                 color: #00c4ff;
                 font-size: 1.7rem;
                 font-weight: 700;
-                margin-left: 20px;
+                margin-left: 5px;
             }
         }
         .descripcion{
