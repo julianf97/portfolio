@@ -74,15 +74,17 @@ export default function ProyectDetail() {
                 </div>
               </div>
               <div className="listaTecnologias">
-                <ul>
-                  <li>React</li>
-                  <li>React</li>
-                  <li>React</li>
-                  <li>React</li>
-                  <li>React</li>
-                  <li>React</li>
-                  <li>React</li>
-                </ul>
+                <div className="interiorLista">
+                  <ul>
+                    <li>React</li>
+                    <li>React</li>
+                    <li>React</li>
+                    <li>React</li>
+                    <li>React</li>
+                    <li>React</li>
+                    <li>React</li>
+                  </ul>
+                </div>
               </div>
               <div className="contenedorBotones">
                 <div className="btnProyect">Deploy</div>

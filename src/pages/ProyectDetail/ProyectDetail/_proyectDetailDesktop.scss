@@ -116,11 +116,13 @@
             .listaTecnologias{
                 width: 100%;
                 height: auto;
-                padding-left: 290px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .interiorLista{
+                    width: 57%;
+                }
                 ul {
-                    width: auto;
-                    height: 100%;
-                    margin-left: 40px;
                     display: flex;
                     flex-direction: column;
                     padding-top: 10px;
