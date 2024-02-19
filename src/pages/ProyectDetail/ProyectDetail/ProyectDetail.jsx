@@ -5,7 +5,6 @@ import "./_proyectDetailMobile.scss"
 import { useContext, useEffect } from "react";
 import { OpenNavbarContext } from "../../../context/OpenNavbarContext";
 import NavbarPortfolio from "../../../components/NavbarPortfolio/NavbarPortfolio/NavbarPortfolio";
-import mercadoLibre from "../../../../public/screensProyect/mercadoLibreScreen.png"
 import OpenNavbar from "../../../components/OpenNavbar/OpenNavbar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -47,7 +46,13 @@ export default function ProyectDetail() {
               <h2>Desafío Técnico Mercado Libre</h2>
             </div>
             <div className="contenedorVideoProyect">
-            <iframe src="https://www.youtube.com/embed/mUtDxxb85Uk?si=s3v_NhYRgrm2u5JE" title="YouTube video player"   sandbox="allow-same-origin allow-scripts" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe 
+                src="https://www.youtube.com/embed/mUtDxxb85Uk?si=s3v_NhYRgrm2u5JE" 
+                title="YouTube video player"   
+                sandbox="allow-same-origin allow-scripts" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </>
