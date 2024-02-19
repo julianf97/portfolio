@@ -71,7 +71,6 @@
                 color: #00c4ff;
                 font-size: 1.7rem;
                 font-weight: 700;
-                margin-left: 5px;
             }
         }
         .descripcion{
@@ -85,6 +84,7 @@
             .interiorDescripcion{
                 width: 59%;
                 height: 95%;
+                margin-left: -15px;
                 p{
                     color: #c2c2c2;
                     font-weight: 500;
@@ -98,12 +98,19 @@
             .tituloTecnologias{
                 width: 100%;
                 height: 5vh;
-                padding-left: 290px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .interiorTituloTecnologia{
+                    width: 60% !important;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
                 h4{
                     color: #00c4ff;
                     font-size: 1.7rem;
                     font-weight: 700;
-                    margin-left: 20px;
                 }
             }
             .listaTecnologias{
@@ -119,7 +126,6 @@
                     padding-top: 10px;
                     padding-bottom: 10px;
                     font-size: 1.3rem;
-                    padding-left: 5px;
                     li {
                         color: #fff;
                         font-weight: 500;

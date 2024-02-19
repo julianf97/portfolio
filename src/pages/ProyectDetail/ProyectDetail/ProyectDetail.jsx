@@ -69,7 +69,9 @@ export default function ProyectDetail() {
             </div>
             <div className="tecnologias">
               <div className="tituloTecnologias">
-                <h4>Tecnologías y Caracteristicas</h4>
+                <div className="interiorTituloTecnologia">
+                  <h4>Tecnologías y Caracteristicas</h4>
+                </div>
               </div>
               <div className="listaTecnologias">
                 <ul>
