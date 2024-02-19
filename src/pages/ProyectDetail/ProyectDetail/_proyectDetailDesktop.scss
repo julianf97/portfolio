@@ -30,6 +30,12 @@
             display: flex;
             align-items: center;
             padding-left: 290px;
+            .interiorTituloProyect{
+                width: 50% !important;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
             h2{
                 color: #fff;
                 font-size: 1.8rem;

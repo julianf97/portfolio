@@ -44,7 +44,9 @@ export default function ProyectDetail() {
               </Link>
             </div>
             <div className="contenedorTituloProyect">
-              <h2>Desafío Técnico Mercado Libre</h2>
+              <div className="interiorTituloProyect">
+                <h2>Desafío Técnico Mercado Libre</h2>
+              </div>
             </div>
             <div className="contenedorVideoProyect">
               <iframe 
