@@ -16,7 +16,8 @@ export const arrayProjectsPage = [
     deployLink: "https://julian-merc-libre.vercel.app/",
     serverLink: "https://server-julianstore.onrender.com/",
     technologies: ["ReactTag", "JavascriptTag", "ExpressTag", "NodeTag", "StyledComponentsTag"],
-    stack: "fullstack"
+    stack: "fullstack",
+    tecnologiesandfeatures: ""
   },
   {
     id: "finellitattoos",
