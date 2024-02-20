@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import foto from "../../../public/fotoSinFondo.png";
 import "./_cardImgDesktop.scss";
+import CV from "../../../public/CV-Julian-Finelli-2024.pdf"
 
 export default function CardImgDesktop() {
   const [imgAnimationComplete, setImgAnimationComplete] = useState(false);
@@ -32,12 +33,16 @@ export default function CardImgDesktop() {
         <motion.div
           className="btnResumen"
         >
-          Contactame
+          <a href="https://api.whatsapp.com/send?phone=5493364024379" target="_blank" rel="noopener noreferrer">
+            Contactame
+          </a>
         </motion.div>
         <motion.div
           className="btnResumen"
         >
-          Mi CV
+          <a href={CV}>
+            Mi CV
+          </a>
         </motion.div>
       </motion.div>) }
     </div>
