@@ -10,11 +10,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Footer from "../../../components/Footer/Footer";
-
+import { useParams } from 'react-router-dom';
+import { arrayProjectsPage } from "../../../data/arrayProyectsPage";
 
 
 
 export default function ProyectDetail() {
+
+  const { id } = useParams(); 
+
+  const project = arrayProjectsPage.find(project => project.id === id);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -45,12 +50,12 @@ export default function ProyectDetail() {
             </div>
             <div className="contenedorTituloProyect">
               <div className="interiorTituloProyect">
-                <h2>Desafío Técnico Mercado Libre</h2>
+                <h2>{project.title}</h2>
               </div>
             </div>
             <div className="contenedorVideoProyect">
               <iframe 
-                src="https://www.youtube.com/embed/mUtDxxb85Uk?si=s3v_NhYRgrm2u5JE" 
+                src={project.urlYoutube} 
                 title="YouTube video player"   
                 sandbox="allow-same-origin allow-scripts" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -64,7 +69,7 @@ export default function ProyectDetail() {
             </div>
             <div className="descripcion">
               <div className="interiorDescripcion">
-                <p>Project made for a large community of fans of belgrano de cordoba, the main objective of the application is to raise funds for each game played by the team, here will reflect the contributions of all users and also you can see the costs of each game.</p>
+                <p>{project.description}</p>
               </div>
             </div>
             <div className="tecnologias">
@@ -76,13 +81,9 @@ export default function ProyectDetail() {
               <div className="listaTecnologias">
                 <div className="interiorLista">
                   <ul>
-                    <li>React</li>
-                    <li>React</li>
-                    <li>React</li>
-                    <li>React</li>
-                    <li>React</li>
-                    <li>React</li>
-                    <li>React</li>
+                    {project.tecnologiesandfeatures.map((technology, index) => (
+                    <li key={index}>{technology}</li>
+                    ))}
                   </ul>
                 </div>
               </div>

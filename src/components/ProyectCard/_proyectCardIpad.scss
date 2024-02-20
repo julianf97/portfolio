@@ -9,6 +9,9 @@
         padding-top: 20px;
         margin-top: 20px !important;
         transition: 1s;
+        .etiquetaLink{
+            width: 100%;
+        }
         /* Estilos para diferentes tamaños de pantalla */
         @media (min-width: 840px) {
             width: 800px; /* Ancho específico para pantallas de al menos 840px de ancho */
@@ -25,7 +28,7 @@
         backdrop-filter: blur(4px); /* Aplicar desenfoque de fondo */
         background-color: #0c0728; /* Color de fondo */
         .imgProyect {
-            width: 90%; /* Ancho del contenedor */
+            width: 100%; /* Ancho del contenedor */
             height: 50%; /* Altura del contenedor */
         
             position: relative; /* Establecer posición relativa */
@@ -38,7 +41,7 @@
             }
         }
         .titleProyectContainer{
-            width: 90%;
+            width: 100%;
             height: auto;
             display: flex;
             justify-content: center;

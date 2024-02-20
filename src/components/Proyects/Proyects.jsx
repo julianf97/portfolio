@@ -43,11 +43,13 @@ export default function Proyects() {
         {arrayProjects.map((project, index) => (
           <ProyectCard
             key={index}
+            id={project.id} 
             title={project.title}
             image={project.image}
             deployLink={project.deployLink}
             serverLink={project.serverLink}
             repositoryLink={project.repositoryLink}
+            videoYoutube={project.urlYoutube}
             technologies={project.technologies.map((tag, index) => {
               const TagComponent = tagComponents[tag];
               return TagComponent ? <TagComponent key={index} /> : null;
@@ -57,9 +59,9 @@ export default function Proyects() {
       </article>
       <div className='contenedorBtnVerTodos'>
         <Link to={"/proyects"}> 
-            <div className='btnResumen'>
-              <span>Ver Más</span>
-            </div>
+          <div className='btnResumen'>
+            <span>Ver Más</span>
+          </div>
         </Link>
       </div>
     </div>

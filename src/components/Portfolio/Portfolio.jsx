@@ -16,6 +16,15 @@ import "./_portfolioDesktop.scss"
 export default function Portfolio() {
   const { isMenuOpen, handleExitNavbar  } = useContext(OpenNavbarContext);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  scrollToTop()
+
   useEffect(() => {
     handleExitNavbar()
   },[])

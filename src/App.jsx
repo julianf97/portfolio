@@ -17,10 +17,10 @@ function App() {
       <OpenNavbarProvider>
         <LenguajeProvider>
           <Routes>
-            <Route path="/" element={<Portfolio/>} />
-            <Route path="/*" element={<Navigate to="/" replace />} />
-            <Route path="/proyects" element={<PageProyect/>} />
-            <Route path="/proyectdetail" element={<ProyectDetail/>} />
+          <Route path="/" element={<Portfolio/>} />
+              <Route path="/proyects" element={<PageProyect />} />
+              <Route path="/proyects/:id" element={<ProyectDetail />} />
+              <Route path="/*" element={<Navigate to="/" replace />} />
           </Routes>
         </LenguajeProvider>
       </OpenNavbarProvider>
