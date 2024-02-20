@@ -40,7 +40,9 @@ export default function OpenNavbar() {
             <Link to="/proyects">
               <li className="btnNav">Proyects</li>
             </Link>
-            <li className="btnNav">About Me</li>
+            <Link to="/about">
+              <li className="btnNav">About</li>
+            </Link>
             <Link to="/">
               <li className="btnNav">Blog</li>
             </Link>
