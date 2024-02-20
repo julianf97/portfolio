@@ -18,6 +18,8 @@ export default function ProyectDetail() {
 
   const project = arrayProjectsPage.find(project => project.id === id);
 
+  const { isMenuOpen, handleExitNavbar } = useContext(OpenNavbarContext);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -31,7 +33,6 @@ export default function ProyectDetail() {
 
   scrollToTop();
 
-  const { isMenuOpen, handleExitNavbar } = useContext(OpenNavbarContext);
 
   return (
     <>
